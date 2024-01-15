@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <title>BUILD AND TRAIN</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="https://cdn.tailwindcss.com"></script>
+        <script defer src="script.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        <!-- loader -->
+        <div id="loader"></div>
+        <!-- loader -->
+
+        <nav class="w-full sticky" id="navbar">
+            <div
+                class="navbar max-w-[1300px] mx-auto px-[20px] text-[16px] overflow-hidden"
+            >
+                <a href="#"
+                    ><img src="img/logo-no-bg.png" alt="logo" class="w-[80px]"
+                /></a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="menu space-x-[20px]">
+                    <li class="list__item"><a href="#home">Home</a></li>
+                    <li class="list__item"><a href="#about">About</a></li>
+                    <li class="list__item"><a href="#services">Services</a></li>
+                    <li class="list__item"><a href="#contact">Contact</a></li>
+                    <li class="list__item">
+                        <a href="#mission">Mission and Vision</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#team">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- home section -->
+        <section class="home" id="home">
+            <div class="home__container min-h-[50vh] h-[100vh] lg:h-[70vh]">
+                <div class="home_content grid grid-cols-1 lg:grid-cols-2">
+                    <div id="info">
+                        <p class="text-[20px] md:text-[40px] font-bold">
+                            Build And Train <br />
+                        </p>
+                        <p class="text-[16px] font-medium">
+                            Build and Train, established in February 2021, is a
+                            nonprofit organization co-founded by Er. Manaswi
+                            Poudel and Er. Sneha Sanjel, both graduates of
+                            Tribhuvan University, Nepal, in 2020. Manaswi having
+                            recently earned a Master's degree in Civil and
+                            Structural Engineering from Rensselaer Polytechnic
+                            Institute, USA, and Sneha currently pursuing a
+                            Master's degree in Disaster Risk Management from
+                            Tribhuvan University, Nepal, they jointly envision
+                            an ecosystem that enhances learners' employability,
+                            productivity, resilience, and return on investment.
+                            Furthermore, they possess a profound comprehension
+                            of the evolving job market and the pivotal role
+                            played by digital skills. Their close collaboration
+                            with the management spans activities such as
+                            proposal writing, hiring processes, and the holistic
+                            advancement of the organization.
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-end items-center hidden lg:flex"
+                        id="info-img"
+                    >
+                        <img src="img/logo-no-bg.png" alt="logo" class="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section class="services" id="services">
+            <div class="services__container min-h-[80vh]">
+                <div
+                    class="text-[20px] md:text-[30px] font-bold mb-[50px] headline"
+                    id="title"
+                >
+                    Services
+                </div>
+                <div
+                    class="services_content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px]"
+                >
+                    <div id="info-service-1" class="flex flex-col items-center">
+                        <div class="mb-[10px]" id="info-img-service-1">
+                            <img
+                                src="img/software-development.png"
+                                alt="logo"
+                                class="w-[160px] h-[160px]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px]">
+                            Software Trainings
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center"
+                        >
+                            Elevate your career with our specialized ETABS and
+                            AUTOCAD training at Build and Train. Our courses,
+                            free and paid, empower 300+ students, bridging
+                            academia and industry needs. Experience a
+                            transformative learning journey, beginning with an
+                            impactful 5-day free ETABS training. Join us to
+                            enhance your skills in civil engineering.
+                        </p>
+                    </div>
+                    <div
+                        id="info-service-2"
+                        class="flex flex-col items-center justify-center"
+                    >
+                        <div class="mb-[10px]" id="info-img-service-2">
+                            <img
+                                src="img/book.png"
+                                alt="logo"
+                                class="w-[150px] h-[150px]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px]">
+                            Research Writing
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center"
+                        >
+                            Delivered training to 700+ students and graduates on
+                            research methods and writing through free and
+                            affordable sessions. Covering diverse aspects, our
+                            commitment to accessibility is evident, ensuring
+                            learners from various backgrounds benefit from
+                            valuable skills in research and effective writing.
+                        </p>
+                    </div>
+                    <div id="info-service-3" class="flex flex-col items-center">
+                        <div class="mb-[10px]" id="info-img-service-3">
+                            <img
+                                src="img/resume.png"
+                                alt="logo"
+                                class="w-[150px] h-[150px]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px]">
+                            Resume Writing
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center"
+                        >
+                            Trained over 50 professionals and graduates in
+                            creating effective CVs from an employer's
+                            perspective. Our training modules delved into the
+                            intricacies of showcasing one's qualifications and
+                            experiences effectively, enhancing the chances of
+                            securing meaningful employment opportunities.
+                        </p>
+                    </div>
+                    <div id="info-service-4" class="flex flex-col items-center">
+                        <div class="mb-[10px]" id="info-img-service-4">
+                            <img
+                                src="img/school.png"
+                                alt="logo"
+                                class="w-[150px] h-[150px]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px]">
+                            Study Abroad Talk Show
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center"
+                        >
+                            Conducting informative sessions on top universities'
+                            application processes and studying abroad
+                            experiences, Build and Train demystifies
+                            complexities. Our aim is to empower aspiring
+                            students, ensuring they embark on educational
+                            journeys with confidence. These sessions inspire
+                            individuals to strive for excellence in their
+                            academic pursuits, providing both knowledge and
+                            motivation.
+                        </p>
+                    </div>
+                    <div id="info-service-5" class="flex flex-col items-center">
+                        <div class="mb-[10px]" id="info-img-service-5">
+                            <img
+                                src="img/research-and-development.png"
+                                alt="logo"
+                                class="w-[150px] h-[150px]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px]">
+                            Research and Development
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center"
+                        >
+                            Build and Train has been actively conducting surveys
+                            with our training program graduates to assess the
+                            skills they have acquired and gauge the impact these
+                            skills have had on their employability.
+                            Collaborative efforts with institutions like clubs
+                            from IOE Pulchowk Campus and Avocado Education
+                            (formerly Institute of Abroad Studies Nepal) has
+                            expanded Build and Train's impact.
+                        </p>
+                    </div>
+                    <div id="info-service-6" class="flex flex-col items-center">
+                        <div class="mb-[10px]" id="info-img-service-6">
+                            <img
+                                src="img/rocket.png"
+                                alt="logo"
+                                class="w-[150px] h-[150px]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px]">
+                            Future Initiatives
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center"
+                        >
+                            With the requested funding, we plan to broaden our
+                            impact by offering coding and computer science
+                            education to underprivileged students in government
+                            schools. We are dedicated to improving employability
+                            and fostering local innovation, and this initiative
+                            aligns with our long-term vision of creating a more
+                            inclusive and tech-savvy society.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission section -->
+
+        <section class="mission" id="mission">
+            <div class="mission__container min-h-[50vh]">
+                <div
+                    class="text-[20px] md:text-[30px] font-bold mb-[50px] headline"
+                    id="title"
+                >
+                    Mission and Vision
+                </div>
+                <div class="mission_content grid grid-cols-1 lg:grid-cols-2">
+                    <div
+                        class="w-full flex justify-end items-center mb-[30px] md:mb-0"
+                        id="mission-img"
+                    >
+                        <img
+                            src="img/mission_vision-nobg.png"
+                            alt="logo"
+                            class=""
+                        />
+                    </div>
+                    <div id="mission-info">
+                        <p class="text-[16px] font-medium text-center">
+                            Build and Train, established in February 2021, is a
+                            nonprofit organization co-founded by Er. Manaswi
+                            Poudel and Er. Sneha Sanjel, both graduates of
+                            Tribhuvan University, Nepal, in 2020. Manaswi having
+                            recently earned a Master's degree in Civil and
+                            Structural Engineering from Rensselaer Polytechnic
+                            Institute, USA, and Sneha currently pursuing a
+                            Master's degree in Disaster Risk Management from
+                            Tribhuvan University, Nepal, they jointly envision
+                            an ecosystem that enhances learners' employability,
+                            productivity, resilience, and return on investment.
+                            Furthermore, they possess a profound comprehension
+                            of the evolving job market and the pivotal role
+                            played by digital skills. Their close collaboration
+                            with the management spans activities such as
+                            proposal writing, hiring processes, and the holistic
+                            advancement of the organization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+
+        <section class="mission" id="testimonials">
+            <div class="mission__container min-h-[50vh] h-[60vh] lg:h-auto">
+                <div
+                    class="text-[20px] md:text-[30px] font-bold mb-[50px] headline"
+                    id="title"
+                >
+                    Testimonials
+                </div>
+                <div class="mission_content flex justify-center items-center">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/slide 1.jpg" alt="Slide 1" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide 2.jpg" alt="Slide 2" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide 3.png" alt="Slide 3" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide 1.jpg" alt="Slide 1" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide 2.jpg" alt="Slide 2" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide 3.png" alt="Slide 3" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team section -->
+        <section class="team" id="team">
+            <div class="team__container min-h-[100vh] relative">
+                <div
+                    class="text-[20px] md:text-[30px] font-bold mb-[150px] headline"
+                    id="title"
+                >
+                    Meet The Team
+                </div>
+
+                <div
+                    class="team_content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-[50px] gap-y-[150px]"
+                >
+                    <div
+                        id="info-team-1"
+                        class="flex flex-col items-center justify-center shadow-lg h-[500px] relative rounded-md bg-white"
+                    >
+                        <div
+                            class="mb-[10px] absolute -top-[15%]"
+                            id="info-img-team-1"
+                        >
+                            <img
+                                src="img/person1.png"
+                                alt="logo"
+                                class="w-[150px] h-[150px] rounded-full shadow-lg border-[8px] border-[#e7e3f6b3]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px] mt-[36px]">
+                            Er. Manaswi Poudel
+                        </h1>
+                        <h1
+                            class="font-medium mb-[10px] text-[14px] text-[#3b325c]"
+                        >
+                            ( Co-founder )
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center px-[10px]"
+                        >
+                            Er. Manaswi Poudel, co-founder of Build and Train,
+                            holds a Master's in Civil and Structural Engineering
+                            from Rensselaer Polytechnic Institute, USA. Her
+                            academic excellence shapes the organization's
+                            educational initiatives, emphasizing both technical
+                            skills and employability. Manaswi envisions an
+                            ecosystem at Build and Train that enhances learners'
+                            resilience and productivity in the evolving job
+                            market. Actively involved in proposal writing and
+                            hiring processes, she contributes to the overall
+                            advancement of the organization, embodying a
+                            commitment to comprehensive learner development and
+                            success.
+                        </p>
+                    </div>
+                    <div
+                        id="info-team-2"
+                        class="flex flex-col items-center justify-center shadow-lg h-[500px] relative rounded-md bg-white"
+                    >
+                        <div
+                            class="mb-[10px] absolute -top-[15%]"
+                            id="info-img-team-2"
+                        >
+                            <img
+                                src="img/person2.png"
+                                alt="logo"
+                                class="w-[150px] h-[150px] rounded-full border-[8px] border-[#e7e3f6b3] shadow-lg"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px] mt-[36px]">
+                            Er.Sneha Sanjel
+                        </h1>
+                        <h1
+                            class="font-medium mb-[10px] text-[14px] text-[#3b325c]"
+                        >
+                            ( Co-founder )
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center px-[10px]"
+                        >
+                            Er. Sneha Sanjel, co-founder of Build and Train,
+                            brings a unique perspective to the organization with
+                            her academic background in Disaster Risk Management.
+                            Currently pursuing a Master's degree from Tribhuvan
+                            University, Nepal, Sneha actively shapes programs,
+                            preparing learners for real-world challenges. Her
+                            role in proposal writing, hiring processes, and
+                            overall development reflects a commitment to
+                            building a comprehensive educational ecosystem.
+                            Sneha's dedication to enhancing learners' return on
+                            investment underscores Build and Train's mission to
+                            create a lasting impact on individuals' lives.
+                        </p>
+                    </div>
+                    <div
+                        id="info-team-3"
+                        class="flex flex-col items-center justify-center shadow-lg h-[500px] relative rounded-md px-2 bg-white"
+                    >
+                        <div
+                            class="mb-[10px] absolute -top-[15%]"
+                            id="info-img-team-3"
+                        >
+                            <img
+                                src="img/person3.png"
+                                alt="logo"
+                                class="w-[150px] h-[150px] rounded-full shadow-lg border-[8px] border-[#e7e3f6b3]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px] mt-[36px]">
+                            Er. Manjari Poudel
+                        </h1>
+                        <h1
+                            class="font-medium mb-[10px] text-[14px] text-[#3b325c]"
+                        >
+                            ( General Manager )
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center"
+                        >
+                            Er. Manjari Poudel, a civil engineering graduate
+                            from Tribhuvan University, Nepal, is currently
+                            pursuing a Master's degree in Civil and Structural
+                            Engineering from North Carolina State University,
+                            USA. She brings extensive experience from her work
+                            with UNDP and UN Volunteer. Since Build and Train's
+                            inception in Feb 2021, she has played a crucial role
+                            as the General Manager.
+                        </p>
+                    </div>
+                    <div
+                        id="info-team-4"
+                        class="flex flex-col items-center justify-center shadow-lg h-[500px] relative rounded-md px-2 bg-white"
+                    >
+                        <div
+                            class="mb-[10px] absolute -top-[15%]"
+                            id="info-img-team-4"
+                        >
+                            <img
+                                src="img/person5.jpg"
+                                alt="logo"
+                                class="w-[150px] h-[150px] rounded-full shadow-lg border-[8px] border-[#e7e3f6b3]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px] mt-[36px]">
+                            Dikshya Lamichhane
+                        </h1>
+                        <h1
+                            class="font-medium mb-[10px] text-[14px] text-[#3b325c]"
+                        >
+                            ( IT Head )
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center"
+                        >
+                            Dikshya Lamichhane, presently pursuing a bachelor's
+                            degree in Computer Engineering at Kathmandu
+                            University, Dhulikhel, and joining Build and Train
+                            in January 2023. Dikshya effectively manages our
+                            social media presence, digital marketing and website
+                            development.
+                        </p>
+                    </div>
+                    <div
+                        id="info-team-5"
+                        class="flex flex-col items-center justify-center shadow-lg h-[500px] relative rounded-md px-2 bg-white"
+                    >
+                        <div
+                            class="mb-[10px] absolute -top-[15%]"
+                            id="info-img-team-5"
+                        >
+                            <img
+                                src="img/person4.png"
+                                alt="logo"
+                                class="w-[150px] h-[150px] rounded-full shadow-lg border-[8px] border-[#e7e3f6b3]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px] mt-[36px]">
+                            Sachin Siwakoti
+                        </h1>
+                        <h1
+                            class="font-medium mb-[10px] text-[14px] text-[#3b325c]"
+                        >
+                            ( Legal Department Head )
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center"
+                        >
+                            Sachin Siwakoti, a master's graduate from Kathmandu
+                            School of Law, is not only a legal practitioner but
+                            also an Assistant Professor at Kathmandu School of
+                            Law.He has acquired various training nationally and
+                            internationally. Since the organization's
+                            establishment in 2021, he has overseen all legal
+                            matters.
+                        </p>
+                    </div>
+                    <div
+                        id="info-team-6"
+                        class="flex flex-col items-center justify-center shadow-lg h-[500px] relative rounded-md px-2 bg-white"
+                    >
+                        <div
+                            class="mb-[10px] absolute -top-[15%]"
+                            id="info-img-team-6"
+                        >
+                            <img
+                                src="img/person6.jpg"
+                                alt="logo"
+                                class="w-[150px] h-[150px] rounded-full shadow-lg border-[8px] border-[#e7e3f6b3]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px] mt-[36px]">
+                            Sarthak Bhattarai
+                        </h1>
+                        <h1
+                            class="font-medium mb-[10px] text-[14px] text-[#3b325c]"
+                        >
+                            ( Intern )
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center"
+                        >
+                            Sarthak Bhattarai, presently pursuing a bachelor's
+                            degree in Infomatics Collage, Pokhara, and joining
+                            Build and Train in August 2023. Sarthak effectively
+                            managed backend including Java and nodejs
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <div class="contact__container">
+                <h2
+                    class="contact__title text-[20px] md:text-[30px] font-bold mb-[50px] headline"
+                    id="title"
+                >
+                    Contact Us
+                </h2>
+                <div class="contact__details">
+                    <!-- put your email -->
+                    <!-- <form
+                        action="https://formsubmit.co/your@gmail.com"
+                        method="POST"
+                        autocomplete="off"
+                    > -->
+                    <form autocomplete="off">
+                        <div class="fields">
+                            <div class="field name">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Name"
+                                    required
+                                />
+                            </div>
+                            <div class="field email">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="E-mail"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="field phone">
+                            <input
+                                type="number"
+                                name="contact"
+                                placeholder="Phone Number"
+                                required
+                            />
+                        </div>
+                        <textarea
+                            class="field textarea"
+                            cols="30"
+                            rows="10"
+                            placeholder="Leave your message...."
+                            name="message"
+                            required
+                        ></textarea>
+
+                        <div class="button">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer__container">
+                <div class="copyrights">
+                    <span>
+                        Copyright © <span id="year"> </span>
+                        <a href="#">Build and Train</a> . All rights reserved.
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <!-- Bootstrap JS and Popper.js -->
+</html>
