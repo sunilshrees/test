@@ -423,6 +423,8 @@ nav.sticky {
 footer {
     background: #3b325c;
     color: #fff;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 .footer__container {
     width: 100%;
@@ -434,7 +436,7 @@ footer {
     margin: 0 auto;
 
     font-size: 1rem;
-    padding: 60px 20px;
+    padding: 20px 20px;
 }
 .copyrights {
     font-size: 1rem;
@@ -533,6 +535,28 @@ input[type='number'] {
         
     }
     
+}
+
+/* socials */
+
+.socials__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* height: 3rem; */
+}
+
+.socials__container .socials {
+    margin: 10px;
+    padding: 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: black;
+    color: #f5f5dc;
+    font-size: 2rem;
 }
 
 /* animation */
