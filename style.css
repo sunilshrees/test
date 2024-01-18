@@ -9,13 +9,11 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 html {
     scroll-behavior: smooth;
     font-family: 'Poppins';
-
 }
 body {
     text-align: justify;
@@ -30,7 +28,7 @@ body {
 ::selection {
     color: black;
     background: #e7e3f6b3;
-  }
+}
 
 #loader {
     position: fixed;
@@ -84,19 +82,16 @@ nav.sticky {
     overflow-x: hidden;
 }
 
-
 .navbar ul li {
     list-style: none;
-
 }
 
 .menu {
     list-style: none;
-
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    
 }
 
 .navbar ul li a {
@@ -113,6 +108,9 @@ nav.sticky {
 /* responsive nav */
 
 @media screen and (max-width: 840px) {
+    html {
+        overflow-x: hidden !important;
+    }
     body {
         overflow-x: hidden;
     }
@@ -162,7 +160,6 @@ nav.sticky {
         right: 5%;
         transform: translate(5%, 20%);
         z-index: 99999;
-
     }
     #mobile-menu.is-active .bar:nth-child(2) {
         opacity: 0;
@@ -452,7 +449,6 @@ footer {
 
 /* swiper */
 
-
 .swiper {
     height: 500px;
     margin: 0 auto;
@@ -481,7 +477,6 @@ footer {
     font-weight: 600 !important;
 }
 
-
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -501,7 +496,7 @@ input[type='number'] {
     }
 
     .home__container {
-        padding:  50px 20px;
+        padding: 50px 20px;
     }
     .team {
         padding: 50px 0px;
@@ -514,12 +509,12 @@ input[type='number'] {
         padding: 50px 20px;
     }
     .mission__container {
-        padding:  50px 20px;
+        padding: 50px 20px;
     }
     .contact__container {
         padding: 50px 20px;
     }
-    .copyrights{
+    .copyrights {
         font-size: 12px;
     }
 
@@ -527,14 +522,37 @@ input[type='number'] {
         height: auto;
         margin: 0 auto;
     }
-    
+
     .swiper-slide img {
         width: 200px;
         height: auto;
         object-fit: cover;
-        
     }
-    
+}
+
+@media screen and (max-width: 1200px) {
+    .services {
+        padding: 50px 0px;
+    }
+    .mission {
+        padding: 50px 0px;
+    }
+
+    .team {
+        padding: 50px 0px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .services {
+        padding: 20px;
+    }
+    .mission {
+        padding: 20px;
+    }
+
+    .team {
+        padding: 20px;
+    }
 }
 
 /* socials */

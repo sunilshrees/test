@@ -65,8 +65,11 @@ const stickyNav = () => {
     } else {
         navBar.classList.remove('sticky');
     }
+
+   
 };
 window.addEventListener('scroll', stickyNav);
+
 
 //scroll reveal
 
