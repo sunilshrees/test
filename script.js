@@ -65,10 +65,21 @@ const stickyNav = () => {
     } else {
         navBar.classList.remove('sticky');
     }
-
+    if (scrolling > 200) {
+        scrollUpBtn.classList.add('active');
+    } else {
+        scrollUpBtn.classList.remove('active');
+    }
    
 };
 window.addEventListener('scroll', stickyNav);
+
+
+const scrollFunction = () => {
+    // console.log('clicked');
+    window.scrollTo(0, 0);
+};
+scrollUpBtn.addEventListener('click', scrollFunction);
 
 
 //scroll reveal
@@ -169,3 +180,23 @@ var swiper = new Swiper('.swiper', {
         clickable: true,
     },
 });
+
+// Update slidesPerView on window resize
+window.addEventListener('resize', function () {
+    var screenWidth = window.innerWidth;
+
+    // Check if the screen size is less than 600px
+    if (screenWidth < 600) {
+        // Update slidesPerView to 1
+        swiper.params.slidesPerView = 1;
+    } else {
+        // Update slidesPerView back to 3 if screen size is 600px or more
+        swiper.params.slidesPerView = 3;
+    }
+
+    // Update the swiper
+    swiper.update();
+});
+
+// Trigger the resize event once to set the initial configuration
+window.dispatchEvent(new Event('resize'));

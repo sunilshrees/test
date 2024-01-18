@@ -521,12 +521,25 @@ input[type='number'] {
     .swiper {
         height: auto;
         margin: 0 auto;
+        width: 100%;
     }
+ 
 
     .swiper-slide img {
         width: 200px;
         height: auto;
         object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .mission__container {
+        height: 100vh !important;
     }
 }
 
@@ -576,6 +589,37 @@ input[type='number'] {
     color: #f5f5dc;
     font-size: 2rem;
 }
+
+/* go to top button */
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 160px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 999;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 2rem;
+    opacity: 0;
+
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.active {
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+    .scroll-up-btn.active {
+        opacity: 0;
+    }
+}
+
 
 /* animation */
 
