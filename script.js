@@ -12,7 +12,7 @@ const listItem = document.querySelectorAll('.list__item');
 const preLoader = document.getElementById('loader');
 
 function myFunction() {
-    setTimeout(function() {
+    setTimeout(function () {
         preLoader.style.display = 'none';
     }, 300);
 }
@@ -70,17 +70,14 @@ const stickyNav = () => {
     } else {
         scrollUpBtn.classList.remove('active');
     }
-   
 };
 window.addEventListener('scroll', stickyNav);
-
 
 const scrollFunction = () => {
     // console.log('clicked');
     window.scrollTo(0, 0);
 };
 scrollUpBtn.addEventListener('click', scrollFunction);
-
 
 //scroll reveal
 
@@ -200,3 +197,23 @@ window.addEventListener('resize', function () {
 
 // Trigger the resize event once to set the initial configuration
 window.dispatchEvent(new Event('resize'));
+
+function seeMore() {
+    var remainingContent = document.getElementById('remainingContent');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var seeLessBtn = document.getElementById('seeLessBtn');
+
+    remainingContent.style.display = 'flex'; // Show remaining content
+    seeMoreBtn.style.display = 'none'; // Hide "See more" button
+    seeLessBtn.style.display = 'inline'; // Show "See less" button
+}
+
+function seeLess() {
+    var remainingContent = document.getElementById('remainingContent');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var seeLessBtn = document.getElementById('seeLessBtn');
+
+    remainingContent.style.display = 'none'; // Hide remaining content
+    seeMoreBtn.style.display = 'inline'; // Show "See more" button
+    seeLessBtn.style.display = 'none'; // Hide "See less" button
+}

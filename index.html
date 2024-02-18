@@ -32,7 +32,6 @@
 
         <!-- scroll up -->
 
-
         <!-- nav section -->
 
         <nav class="w-full sticky" id="navbar">
@@ -121,7 +120,73 @@
                 </div>
                 <div
                     class="services_content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px]"
+                    style="justify-items: center"
                 >
+                    <div id="info-service-1" class="flex flex-col items-center">
+                        <div class="mb-[10px]" id="info-img-service-1">
+                            <img
+                                src="img/networking.png"
+                                alt="logo"
+                                class="w-[160px] h-[160px]"
+                            />
+                        </div>
+
+                        <h1 class="font-medium mb-[10px] text-[18px]">
+                            She Leads
+                        </h1>
+                        <p
+                            class="text-[14px] font-medium text-gray-500 text-center"
+                        >
+                            The self-paced program consists of two modules
+                            designed to be completed over a three-week period,
+                            commencing on March 1. Participants have the
+                            flexibility to progress through the modules at their
+                            own pace. The program covers leadership and
+                            <span
+                                id="remainingContent"
+                                style="display: none"
+                                class="inline-block"
+                                >vision mapping in the first module, emphasizing
+                                qualities of effective leadership and the
+                                importance of visioning. The second module
+                                focuses on strategic task prioritization and
+                                execution planning, introducing the Eisenhower
+                                Matrix and providing guidance on detailed
+                                execution plans. Registration is open for
+                                individuals seeking a flexible and comprehensive
+                                learning experience in these key areas.
+                            </span>
+                            <button
+                                id="seeMoreBtn"
+                                onclick="seeMore()"
+                                class="font-normal inline-block"
+                            >
+                                ...See more
+                            </button>
+                            <button
+                                id="seeLessBtn"
+                                onclick="seeLess()"
+                                style="display: none"
+                                class="font-normal inline-block"
+                            >
+                                See less
+                            </button>
+                        </p>
+                        <div
+                            class="w-full flex justify-center items-center mt-2"
+                        >
+                            <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdMCcG0aRPJccyyTzaDcX3h91TgFPMT1i9eA3Zd6hw0gqmnPQ/viewform"
+                                target="_blank"
+                            >
+                                <button
+                                    class="flex bg-[#3b325c] px-6 py-2 rounded-[20px] text-white"
+                                >
+                                    Apply Now
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                     <div id="info-service-1" class="flex flex-col items-center">
                         <div class="mb-[10px]" id="info-img-service-1">
                             <img
@@ -246,6 +311,7 @@
                             expanded Build and Train's impact.
                         </p>
                     </div>
+                    <div></div>
                     <div id="info-service-6" class="flex flex-col items-center">
                         <div class="mb-[10px]" id="info-img-service-6">
                             <img
@@ -276,8 +342,8 @@
 
         <!-- Mission section -->
 
-        <section class="mission " id="mission">
-            <div class="mission__container min-h-[50vh] ">
+        <section class="mission" id="mission">
+            <div class="mission__container min-h-[50vh]">
                 <div
                     class="text-[20px] md:text-[30px] font-bold mb-[50px] headline"
                     id="title"
@@ -296,7 +362,9 @@
                         />
                     </div>
                     <div id="mission-info">
-                        <p class="text-[16px] font-medium text-justify sm:text-center">
+                        <p
+                            class="text-[16px] font-medium text-justify sm:text-center"
+                        >
                             In response to the evolving demands of the digital
                             era, our organization is dedicated to imparting
                             coding knowledge to students, acknowledging its
@@ -410,7 +478,7 @@
                             ecosystem at Build and Train that enhances learners'
                             resilience and productivity in the evolving job
                             market.
-                             <!-- Actively involved in proposal writing and
+                            <!-- Actively involved in proposal writing and
                             hiring processes, she contributes to the overall
                             advancement of the organization, embodying a
                             commitment to comprehensive learner development and
