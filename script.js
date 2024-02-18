@@ -108,7 +108,7 @@ ScrollReveal().reveal('#title', {
 });
 
 // for services
-for (let i = 1; i <= 6; i++) {
+for (let i = 1; i <= 7; i++) {
     ScrollReveal().reveal(`#info-service-${i}`, {
         delay: 200 + i * 100,
         origin: 'bottom',
